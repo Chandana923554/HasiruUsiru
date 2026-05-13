@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8FFF8"
+    android:padding="20dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="24sp"
+            android:textColor="#1B5E20"
+            android:layout_marginEnd="12dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"/>
+
+    </LinearLayout>
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Bengaluru Green Community"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Full Name -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:hint="Enter your full name"
+        android:inputType="textPersonName"
+        android:background="#EEEEEE"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textSize="13sp"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etRegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:hint="guardian@hasiru.org"
+        android:inputType="textEmailAddress"
+        android:background="#EEEEEE"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textSize="13sp"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Password -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etRegPassword"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:hint="Min 4 characters"
+        android:inputType="textPassword"
+        android:background="#EEEEEE"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textSize="13sp"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Confirm Password -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:hint="Re-enter password"
+        android:inputType="textPassword"
+        android:background="#EEEEEE"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textSize="13sp"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Create Account Button -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Create Account"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1B5E20"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Login Link -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have account? "
+            android:textSize="13sp"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:id="@+id/tvLoginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="13sp"
+            android:textColor="#2E7D32"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

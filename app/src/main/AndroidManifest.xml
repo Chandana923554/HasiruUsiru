@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HasiruUsiru">
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDqJ-e8mA6Qz6seDRNBAO4fMvjyoLSMu9s
+" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.hasiruusiru.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider> <!-- ✅ LOGIN is FIRST screen -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Home Screen -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" /> <!-- Map Screen -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!-- Add Tree -->
+        <activity
+            android:name=".AddTreeActivity"
+            android:exported="false" /> <!-- Oxygen Score -->
+        <activity
+            android:name=".OxygenScoreActivity"
+            android:exported="false" /> <!-- Species Guide -->
+        <activity
+            android:name=".SpeciesGuideActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

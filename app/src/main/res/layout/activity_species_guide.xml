@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F8E9">
+
+    <!-- Title Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2E7D32"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Species Guide"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <!-- Scrollable Species List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Neem Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Neem"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#2E7D32"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ಬೇವು (Bevu)"
+                    android:textSize="16sp"
+                    android:textColor="#66BB6A"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medicinal tree native to Karnataka. Drought resistant and grows well in hot dry soil. Produces natural pesticide."
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O2 Factor: "
+                        android:textStyle="bold"
+                        android:textColor="#2E7D32"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.5x"
+                        android:textColor="#333333"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Peepal Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peepal"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#2E7D32"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ಅರಳಿ (Arali)"
+                    android:textSize="16sp"
+                    android:textColor="#66BB6A"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Highest oxygen producing tree. Sacred tree that produces oxygen even at night. Grows well in all soil types in Karnataka."
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O2 Factor: "
+                        android:textStyle="bold"
+                        android:textColor="#2E7D32"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.0x"
+                        android:textColor="#333333"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Honge Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Honge"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#2E7D32"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ಹೊಂಗೆ (Honge)"
+                    android:textSize="16sp"
+                    android:textColor="#66BB6A"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Native shade tree of Karnataka. Excellent for roadside planting. Seeds used for biofuel. Grows fast in red soil."
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O2 Factor: "
+                        android:textStyle="bold"
+                        android:textColor="#2E7D32"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.8x"
+                        android:textColor="#333333"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Back Button -->
+            <Button
+                android:id="@+id/btnBackFromSpecies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back to Map"
+                android:backgroundTint="#2E7D32"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

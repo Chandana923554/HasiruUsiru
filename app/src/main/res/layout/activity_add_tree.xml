@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Tree"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- GPS Location Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GPS Location:"
+            android:textSize="16sp"
+            android:textColor="#2E7D32"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location not found yet"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:background="#E8F5E9"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnGetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get My Location"
+            android:backgroundTint="#66BB6A"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Photo Section -->
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take Tree Photo"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#E8F5E9"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Species Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Species:"
+            android:textSize="16sp"
+            android:textColor="#2E7D32"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerSpecies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8F5E9"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Girth Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tree Girth (cm):"
+            android:textSize="16sp"
+            android:textColor="#2E7D32"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etGirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter girth in cm"
+            android:inputType="numberDecimal"
+            android:background="#E8F5E9"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Health Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tree Health:"
+            android:textSize="16sp"
+            android:textColor="#2E7D32"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioHealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radioGood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Good"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average"/>
+
+            <RadioButton
+                android:id="@+id/radioPoor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poor"/>
+
+        </RadioGroup>
+
+        <!-- Empty Pit Section -->
+        <CheckBox
+            android:id="@+id/checkEmptyPit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark as Empty Pit"
+            android:textColor="#F44336"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveTree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE TREE"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

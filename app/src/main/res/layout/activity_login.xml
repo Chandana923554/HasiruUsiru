@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FFF8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Forest Background with Logo -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+
+            <!-- Forest Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:src="@drawable/forest_bg"
+                android:scaleType="centerCrop"/>
+
+            <!-- Dark Overlay -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="#44000000"/>
+
+            <!-- Logo Card - TOP CENTER -->
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="#1B5E20"
+                    android:text="🌿"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hasiru-Usiru"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1B5E20"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- Form Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8FFF8"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <!-- Welcome Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Guardian"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#1B1B1B"
+                android:gravity="center"
+                android:layout_marginBottom="6dp"/>
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join the community mapping Bengaluru's green future."
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:layout_marginBottom="28dp"/>
+
+            <!-- Email Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="6dp"/>
+
+            <!-- Email Input -->
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="guardian@hasiru.org"
+                android:inputType="textEmailAddress"
+                android:background="#EEEEEE"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Password Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Password"
+                    android:textSize="13sp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?"
+                    android:textSize="13sp"
+                    android:textColor="#2E7D32"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!-- Password Input -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="........"
+                android:inputType="textPassword"
+                android:background="#EEEEEE"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Sign In Button -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Sign In"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1B5E20"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Divider -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#DDDDDD"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Or continue with  "
+                    android:textSize="12sp"
+                    android:textColor="#999999"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#DDDDDD"/>
+
+            </LinearLayout>
+
+            <!-- Social Buttons Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <!-- Google Button -->
+                <LinearLayout
+                    android:id="@+id/btnGoogle"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="G"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#EA4335"
+                        android:layout_marginEnd="6dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Google"
+                        android:textSize="14sp"
+                        android:textColor="#333333"/>
+
+                </LinearLayout>
+
+                <!-- Facebook Button -->
+                <LinearLayout
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="f"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#1877F2"
+                        android:layout_marginEnd="6dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Facebook"
+                        android:textSize="14sp"
+                        android:textColor="#333333"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Register Link -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New here? "
+                    android:textSize="14sp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/tvRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create an account."
+                    android:textSize="14sp"
+                    android:textColor="#2E7D32"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
